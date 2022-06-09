@@ -44,17 +44,47 @@ html, body {
   font-size: 50px;
 }
 
-footer {
+header {
   background-color: #8a817c;
-  padding-left: 10%;
   font-size: 50px;
-  border-bottom-style: solid;
   border-left-style: solid;
   border-right-style: solid;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-top-style: solid;
+  flex-direction: row-reverse;
+  padding-right: 5%;
 }
-footer h2 {
-  font-size: 30px;
-  display: inline;
+
+nav ul {
+  display: none;
+}
+
+footer {
+  background-color: #8a817c;
+  font-size: 50px;
+  border-left-style: solid;
+  border-right-style: solid;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-bottom-style: solid;
+  padding-left: 10%;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  display: inline-block;
+}
+
+.top {
+  padding-right: 1%;
+}
+
+.bottom {
+  padding-left: 8%;
 }
 
 /*# sourceMappingURL=styles.css.map */
