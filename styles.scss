@@ -1,5 +1,5 @@
 $primary1: #463f3a;
-$primary2: #a1d1c3;
+$primary2: #7F9B50;
 $neutral1: #302a26;
 $neutral2: #bcb8b1;
 $neutral3: #8a817c;
@@ -16,33 +16,35 @@ html, body {
 }
 
 .mainbg {
-    background-image: url("/images/background.jpg");
+    background-image: url("/images/bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: $neutral3;
-    height: 100%;
+    min-height: 100%;
     padding: 8%;
 }
 
 .bg {
-    display: block;
     background-color: $neutral2; 
     margin: auto;
     padding: 5vw;
     position: relative;
     border-style: solid;
+    width: 100%;
+    min-height: 100%;
     }
 
-@media screen and (min-width:768px) {
+
+@media screen and (min-width:700px) {
     .mainbg {
-        padding: 5%
+        padding: 6vw
     }
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:1100px) {
     .mainbg {
-        padding: 2%
+        padding: 3vw
     }
 }
 
@@ -60,20 +62,22 @@ html, body {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    
 }
-
-
 
 header {
     @include banner;
     border-top-style: solid;
     flex-direction: row-reverse;
-    padding-right: 5%;
+    padding-right: 8%;
 }
 
 nav {
     ul {
         display: none;
+    }
+    .left {
+        float: left;
     }
 }
 
@@ -90,10 +94,61 @@ h2 {
     display: inline-block;
 }
 
-.top {
-    padding-right: 1%;
-}
-
 .bottom {
     padding-left: 8%;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100%;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    h1 {
+        font-size: 7vh;
+        padding-left: 10%;
+        margin: 0;
+    }
+}
+
+ul {
+    list-style: none;
+    padding-left: 20%;
+    padding-bottom: 15%;
+}
+
+#subtitle {
+    font-size: 5vh;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+
+.circle {
+    padding: 1%;
+}
+
+button {
+    background-color: $primary1;
+    border: none;
+    color: $neutral2;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px
 }
