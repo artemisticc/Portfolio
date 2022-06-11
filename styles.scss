@@ -7,6 +7,7 @@ $neutral3: #8a817c;
 html, body {
     margin: 0;
     height: 100%;
+    font-size: 1vw;
     font-family: 'Poppins', sans-serif;
     color: $neutral1;
 }
@@ -21,13 +22,42 @@ html, body {
     background-position: center;
     background-size: cover;
     background-color: $neutral3;
-    min-height: 100%;
-    padding: 8%;
+    min-height: 100vh;
+    padding: 8vw;
 }
 
-.bg {
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    h1 {
+        font-size: 15rem;
+        padding-left: 10%;
+        margin: 0;
+    }
+}
+
+@mixin banner {
+    background-color: $neutral3;
+    font-size: 50px;
+    border-left-style: solid;
+    border-right-style: solid;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+}
+
+header {
+    @include banner;
+    border-top-style: solid;
+    flex-direction: row-reverse;
+    padding-right: 8%;
+}
+
+.middle {
     background-color: $neutral2; 
-    margin: auto;
+    margin: 0;
     float: left;
     padding: 5vw;
     position: relative;
@@ -55,23 +85,7 @@ html, body {
     font-size: 50px;
 }
 
-@mixin banner {
-    background-color: $neutral3;
-    font-size: 50px;
-    border-left-style: solid;
-    border-right-style: solid;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    
-}
 
-header {
-    @include banner;
-    border-top-style: solid;
-    flex-direction: row-reverse;
-    padding-right: 8%;
-}
 
 nav {
     ul {
@@ -107,15 +121,7 @@ h2 {
 }
 
 
-main {
-    display: flex;
-    flex-direction: column;
-    h1 {
-        font-size: 7vh;
-        padding-left: 10%;
-        margin: 0;
-    }
-}
+
 
 ul {
     list-style: none;
