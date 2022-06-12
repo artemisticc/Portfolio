@@ -13,41 +13,74 @@
 </head>
 
 <body>
-    <div class="mainbg">
-        <div id="main">
-            <header>
-                <nav>
-                    <h2>
-                        menu
-                    </h2>
-                    <span class="top">
-                        <i class="fa-solid fa-circle"></i>
-                    </span>
-                    <ul>
-                            <li id="home"></li>
-                            <li>about me.</li>
-                            <li>my work.</li>
-                            <li>blog.</li>
-                            <li>contact me.</li>
+    <div class="content">
+        <header>
+            <nav>
+                <div class="desktop_nav">
+                    <a href ="#"><i class="fa-solid fa-circle"></i></a>
+                    <a href ="./about_me.html"><li>about me.</li></a>
+                    <a href ="./my_work.html"><li>my work.</li></a>
+                    <a href ="./blog.html"><li>blog.</li></a>
+                    <a href ="contactform"><li>contact me.</li></a>
+                </div>
+                <h2>
+                    menu
+                </h2>
+                <div class="dropdown">
+                    <input type="checkbox" id="menu_check">
+                    <label for="menu_check"><i class="fa-solid fa-circle"></i></label>
+                    <div class="menu_links">
+                        <ul>
+                            <a href ="#"><li>home</li></a>
+                            <a href ="./about_me.html"><li>about me</li></a>
+                            <a href ="./my_work.html"><li>my work</li></a>
+                            <a href ="./blog.html"><li>blog</li></a>
+                            <a href ="contactform"><li>contact me</li></a>
                         </ul>
-                    </nav>
-            </header>
-            <div class="bg">
-                <main>
-                    <img src="./images/about me.jpg">
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="middle">
+            <main>
+                <div class=mainpageheader>
                     <h1>
-                        <div id="subtitle">
-                            <u>about me.</u>
-                        </div>
+                        hall. <br>
+                        Nicole
                     </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis ligula egestas erat auctor tincidunt. Quisque vehicula sed enim sit amet convallis. Integer bibendum vestibulum libero, bibendum vulputate metus tempus eget. Suspendisse at libero lectus. Donec ut metus viverra, venenatis turpis in, pellentesque ex. Duis gravida felis vitae ultrices placerat. Duis semper condimentum convallis. Vestibulum eu nisi dolor.
-                    </p>
-                </main>
-            </div>
+                    <ul class="mainpagelist">
+                        <li><i class="fa-solid fa-angles-right"></i> descriptor</li>
+                        <li><i class="fa-solid fa-angles-right"></i> descriptor</li>
+                        <li><i class="fa-solid fa-angles-right"></i> descriptor</li>
+                        <li><i class="fa-solid fa-angles-right"></i> descriptor</li>
+                        <li><i class="fa-solid fa-angles-right"></i> descriptor</li>
+                    </ul>
+                </div>
+                <!-- remove pic icons if not working -->
+                <div class ="pic_icons">
+                    <div id="home_pic">
+                        <img class="forest" src="/src/images/about me resize.jpg">
+                    </div>
+                    <div class="icons">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="https://github.com/artemisticc" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </main>
         </div>
+        <footer>
+            <a href ="">
+                <div class="footer_link">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h2>
+                        contact me
+                    </h2>
+                </div>
+            </a>
+        </footer>
     </div>
 </body>
 
 </html>
-
