@@ -2,7 +2,7 @@
 Portfolio for Term 1
 
 ```
-sass --watch styles.scss styles.css
+sass --style compressed --watch combined.scss:combined.css
 ```
 
 - dot cursor or dot that follows cursor

@@ -20,6 +20,11 @@ h2 {
     font-size: 8rem;
 }
 
+h3 {
+    margin: 0;
+    font-size: 6rem;
+}
+
 ul {
     text-decoration: wavy;
 }
@@ -151,16 +156,6 @@ footer {
     padding-top: 4vh;
 }
 
-.slider {
-    display: flex;
-    justify-content: center;
-    padding: 1%;
-}
-
-.circle {
-    padding: 1%;
-}
-
 button {
     background-color: $primary1;
     border: none;
@@ -225,7 +220,6 @@ ul {
 .pic_icons {
     display: flex;
     flex-direction: column;
-    // justify-content: space-evenly;
 }
 
 ul i {
@@ -235,6 +229,17 @@ ul i {
 .desktop_nav {
     display: none;
 }
+
+@mixin icons_desktop {
+    flex-direction: column;
+    font-size: 4rem;
+    padding-top: 0;
+    padding-left: 10%;
+    justify-content: space-between;
+    
+}
+
+// media queries
 
 @media screen and (min-width:768px) {
     body {
@@ -267,7 +272,6 @@ ul i {
     #content {
     align-items: stretch;
     height: 100%;
-    // flex-grow: 2;
 }
 
 main {
@@ -284,11 +288,7 @@ main {
     padding: 0;
 }
 .middle .icons {
-    flex-direction: column;
-    font-size: 4rem;
-    padding-top: 0;
-    padding-left: 10%;
-    justify-content: space-between;
+    @include icons_desktop()
 }
 
 .middle h1 {

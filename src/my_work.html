@@ -4,59 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="combined.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/91a63a1369.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style/slider-def.css">
     <title>My work</title>
 </head>
 
 <body>
-    
-        <div id="main">
-            <header>
-                <nav>
-                    <h2>
-                        menu
-                    </h2>
-                    <span class="top">
-                        <i class="fa-solid fa-circle"></i>
-                    </span>
-                    <ul>
-                            <li id="home"></li>
-                            <li>about me.</li>
-                            <li>my work.</li>
-                            <li>blog.</li>
-                            <li>contact me.</li>
+    <div class="content">
+        <header>
+            <nav>
+                <div class="desktop_nav">
+                    <a href ="./index.html"><i class="fa-solid fa-circle"></i></a>
+                    <a href ="./about_me.html"><li>about me.</li></a>
+                    <a href ="#"><li>my work.</li></a>
+                    <a href ="./blog.html"><li>blog.</li></a>
+                    <a href ="contactform"><li>contact me.</li></a>
+                </div>
+                <div id="mail_icon">
+                    <a href ="contactform"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <h2>
+                    menu
+                </h2>
+                <div class="dropdown">
+                    <input type="checkbox" id="menu_check">
+                    <label for="menu_check"><i class="fa-solid fa-circle"></i></label>
+                    <div class="menu_links">
+                        <ul>
+                            <a href ="./index.html"><li>home</li></a>
+                            <a href ="./about_me.html"><li>about me</li></a>
+                            <a href ="#"><li>my work</li></a>
+                            <a href ="./blog.html"><li>blog</li></a>
+                            <a href ="contactform"><li>contact me</li></a>
                         </ul>
-                    </nav>
-            </header>
-            <div class="bg">
-                <main>
-                    <h1>
-                        <div id="subtitle">
-                            <u>my work.</u>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="middle">
+            <main class="column">
+                <section class="header">
+                    <div class="myworkpage">
+                        <h1>
+                            my work.
+                        </h1>      
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lobortis vestibulum neque, at luctus nisl laoreet non. Vivamus neque nunc, dignissim id convallis vel, porttitor in mauris. Pellentesque arcu nisi, bibendum a sagittis et, vulputate a diam. Suspendisse potenti. Etiam ullamcorper sed risus at mollis. Nam accumsan ullamcorper elit non laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum rutrum ligula non lectus sollicitudin, eget dignissim sapien bibendum. Praesent id lectus dictum, aliquet magna ornare, interdum nisl.
+                            </p><br>
+                            <span class="hide_mobile">
+                                <a href="nicole_resume.pdf" download="nicole_resume" class="resume_download">
+                                <button class="download"><i class="fa-solid fa-arrow-down-to-square"></i>resume</button>
+                                </a>   
+                            </span>       
+                    </div>
+                    <!-- professional links -->
+                    <div class="mywork_icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://github.com/artemisticc" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </section>
+                <!-- image carousel for mobile-->
+                <section class="projects_mobile">
+                    <div class="container">
+                        <div class="carousel">
+                            <input type="radio" name="slides" checked="checked" id="slide-1">
+                            <input type="radio" name="slides" id="slide-2">
+                            <input type="radio" name="slides" id="slide-3">
+                            <ul class="carousel_images">
+                                <li class="carousel_slide">
+                                    <figure>
+                                        <div>
+                                            <a href="PROJECTLINK1HERE">
+                                                <img src="./images/snowy_forest.jpg" alt="">
+                                                <figcaption class="text">Project 1</figcaption>
+                                            </a>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="carousel_slide">
+                                    <figure>
+                                        <div>
+                                            <a href="PROJECTLINK2HERE">
+                                                <img src="./images/about me resize.jpg" alt="">
+                                                <figcaption class="text">Project 2</figcaption>
+                                            </a>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="carousel_slide">
+                                    <figure>
+                                        <div>
+                                            <a href="PROJECTLINK3HERE">
+                                                <img src="./images/forest2.jpg.jpg" alt="">
+                                                <figcaption class="text">Project 3</figcaption>
+                                            </a>
+                                        </div>
+                                    </figure>
+                                </li>
+                            </ul>    
+                            <ul class="dots">
+                                <li>
+                                    <label for="slide-1"><i class="fa-solid fa-circle"></i></label>
+                                </li>
+                                <li>
+                                    <label for="slide-2"><i class="fa-solid fa-circle"></i></label>
+                                </li>
+                                <li>
+                                    <label for="slide-3"><i class="fa-solid fa-circle"></i></label>
+                                </li>
+                            </ul>
                         </div>
-                    </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis ligula egestas erat auctor tincidunt. Quisque vehicula sed enim sit amet convallis. Integer bibendum vestibulum libero, bibendum vulputate metus tempus eget.
-                    </p>
-                    <img class="slideshow" src="./images/about me.jpg">
-                </main>
-                <div class="slider">
-                    <span class="circle"><i class="fa-solid fa-circle"></i></span>
-                    <span class="circle"><i class="fa-regular fa-circle"></i></span>
-                    <span class="circle"><i class="fa-regular fa-circle"></i></span>
-                </div>
-                <div class="center">
-                    <button>resume</button>
-                </div>
-            </div>
-        </div>
-    
+                    </div>
+                    <a href="nicole_resume.pdf" download="nicole_resume" class="resume_download">
+                        <button class="download"><i class="fa-solid fa-arrow-down-to-square"></i>resume</button>
+                    </a>
+                </section>
+                <section class="projects_desktop">
+                    <div class="container1">
+                        <div class="card">
+                            <img src="./images/snowy_forest.jpg">
+                            <figcaption class="text"><a href="PROJECTLINK1HERE">Project 1</a></figcaption>
+                        </div>
+                        <div class="card">
+                            <img src="./images/about me resize.jpg">
+                            <figcaption class="text"><a href="PROJECTLINK2HERE">Project 2</a></figcaption>
+                        </div>
+                        <div class="card">
+                            <img src="./images/forest2.jpg.jpg">
+                            <figcaption class="text"><a href="PROJECTLINK3HERE">Project 3</a></figcaption>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </section>
+    </div>
 </body>
-
 </html>
-
