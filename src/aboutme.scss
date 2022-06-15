@@ -50,6 +50,9 @@ p {
     .mainpageheader {
         flex-direction: column-reverse;
         width: 50%;
+        h1 {
+            padding: 0%;
+        }
     }
     #mail_icon {
         display: none;
@@ -61,16 +64,10 @@ p {
             padding-top: 13vw;
         }
     }
-    .mainpageheader{ 
-        h1 {
-            padding: 0%;
-        }
-    }
 }
 
     // my work specific
 
-    // projects for mobile
     @mixin aspect-ratio($width, $height) {
         position: relative;
         &:before {
@@ -335,21 +332,46 @@ h3 {
         margin-left: 5vw;
         margin-right: 5vw;
     }
-    figure {
-        margin: 0;
-        width: 40%;
-    }
-    .bloglink p {
+    .bloglink {
+        p {
         font-size: 1rem;
-    }
-    h3 {
-        font-size: 3rem;
+        }
+        figure {
+            margin: 0;
+            width: 40%;
+        }
+        h3 {
+            font-size: 2rem;
+        }
     }
     .blog_title {
         width: 35%;
     }
-
-.date_category {
-    padding-bottom: 5%;
-}
+    .date_category {
+        padding-bottom: 5%;
+    }
+    .mainpageheader_blog {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        .icons {
+            flex-direction: row;
+            font-size: 5rem;
+            padding: 0;
+            padding-right: 10%;
+            width: 40%;
+            justify-content: space-around;
+        }
+    }
+    .blogpost {
+        .paragraphs {
+            width: 80%;
+            margin: auto;
+            padding-top: 2vw;
+        }
+        p {
+            font-size: 1rem;
+            margin: 1rem;
+        }
+    }
 }
