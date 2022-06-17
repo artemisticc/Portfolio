@@ -348,7 +348,8 @@ h3 {
         width: 35%;
     }
     .date_category {
-        padding-bottom: 5%;
+        padding-bottom: 1%;
+        padding-top: 1%;
     }
     .mainpageheader_blog {
         display: flex;
@@ -373,5 +374,11 @@ h3 {
             font-size: 1rem;
             margin: 1rem;
         }
+    }
+    #backtotop {
+        font-size: 4rem;
+    }
+    .container1 {
+        padding-top: 5%;
     }
 }
